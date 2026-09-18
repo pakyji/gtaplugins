@@ -29,7 +29,7 @@ module.exports = {
         const psId = interaction.options.getString('playstation_id');
         const user = interaction.user;
 
-        // Aapka specific target channel ID jahan sabka card send hoga
+        // Aapka specific target channel ID
         const targetChannelId = '901702088738865172';
 
         // Embed card design
@@ -45,7 +45,7 @@ module.exports = {
             .setTimestamp()
             .setFooter({ text: 'GTA Bot Registration System', iconURL: client.user.displayAvatarURL() });
 
-        // User ko sirf personal (ephemeral) message dikhega taaki chat spam na ho
+        // User ko ephemeral (private) message dikhega
         await interaction.reply({ 
             content: `✅ Your details have been successfully submitted!`, 
             ephemeral: true 
